@@ -17,8 +17,10 @@ body {
 .section_one_container {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .section_one {
+    width: 60%;
     height: 350px;
     align-items: center;
     justify-content: center;
@@ -26,6 +28,7 @@ body {
     display:flex;
     color: #EEEEEE;
     .item {
+        min-width: 400px;
         height: 200px;
         flex: 1;
     }
@@ -106,7 +109,7 @@ body {
     border-style: solid;
     height: 150px;
     width: 150px;
-    border-color: rgb(47, 118, 252);
+    border-color: #3882F6;
     border-width: 4px;
     border-radius: 12px;
 }
@@ -151,8 +154,15 @@ body {
     width: 100%;
 }
 
-#header {
+#testing {
     background-color: #1F2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header {
+    width: 60%;
     color: #EEEEEE;
     display: flex;
     height: 80px;
@@ -161,7 +171,7 @@ body {
 }
 
 .logo {
-    padding: 30px;
+    padding-top: 30px;
     font-size: 24px;
     color: #F9FAF8;
     justify-content: left;
@@ -169,12 +179,12 @@ body {
 }
 
 .link_container {
-    padding: 30px;
     display: flex;
     align-items: center;
 }
 
 .solo_link {
+    min-width: 80px;
     padding: 25px;
     font-size: 18px;
     color: #E5E7EB;
@@ -191,8 +201,8 @@ body {
     .advertisement {
         border-radius: 8px;
         height: 100px;
-        width: 800px;
-        background-color: rgb(47, 118, 252);
+        width: 60%;
+        background-color:#3882F6;
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -206,6 +216,29 @@ body {
             }
         }
     }
+}
+
+#button_one {
+    width: 140px;
+    height: 40px;
+    border-style: hidden;
+    background-color:#3882F6;
+    border-radius: 6px;
+    color: white;
+    font-family: "Roboto";
+    font-size: 18px;
+}
+
+#button_two {
+    width: 140px;
+    height: 40px;
+    border-style: solid;
+    background-color:#3882F6;
+    border-color: white;
+    border-radius: 6px;
+    color: white;
+    font-family: "Roboto";
+    font-size: 18px;
 }
 
 
