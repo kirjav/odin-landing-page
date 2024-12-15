@@ -1,0 +1,48 @@
+div {
+    padding: 30px;
+    text-align: center;
+  }
+
+.MainPageContainer {
+    text-align: center;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.section_one {
+    height: 300px;
+    padding: 80px;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    display:flex;
+    background-color: #1F2937;
+    color: #EEEEEE;
+    .item {
+        height: 200px;
+        flex: 1;
+    }
+}
+
+.section_one #left.item {
+    text-align: left;
+}
+
+
+.section_three {
+    background-color: #E5E7EB;
+}
+
+#footer {
+    position: fixed;
+    background-color: #1F2937;
+    color: #EEEEEE;
+    bottom: 0;
+    width: 100%;
+}
+
+#header {
+    background-color: #1F2937;
+    color: #EEEEEE;
+    height: 50px;
+}
