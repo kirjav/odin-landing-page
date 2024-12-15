@@ -1,12 +1,17 @@
 div {
-    padding: 30px;
     text-align: center;
   }
 
+body {
+    background-color: #1F2937;
+    margin: 0;
+    padding: 0;
+}
 .MainPageContainer {
+    border:none;
+    width: 100%;
     text-align: center;
-    padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 .section_one {
@@ -52,13 +57,17 @@ div {
     background-color: rgb(130, 155, 155);
 }
 
-
-
 .section_three {
     background-color: #E5E7EB;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 30px;
+}
+
+.section_two {
+    width: 100%;
+    background-color: white;
 }
 
 .section_three div {
@@ -69,6 +78,11 @@ div {
 .section_three p {
     width: 600px;
     text-align: left;
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    color: #1F2937
+
 }
 .section_three #signage {
     text-align: right;
@@ -77,10 +91,15 @@ div {
 }
 
 #footer {
-    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 60px;
     background-color: #1F2937;
-    color: #EEEEEE;
+    color: #F9FAF8;
     bottom: 0;
+    padding: 0;
     width: 100%;
 }
 
@@ -94,6 +113,7 @@ div {
 }
 
 .logo {
+    padding: 30px;
     font-size: 24px;
     color: #F9FAF8;
     justify-content: left;
@@ -101,12 +121,41 @@ div {
 }
 
 .link_container {
+    padding: 30px;
     display: flex;
     align-items: center;
 }
 
 .solo_link {
+    padding: 25px;
     font-size: 18px;
     color: #E5E7EB;
     text-align: left;
+}
+
+.section_four {
+    background-color: white;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .advertisement {
+        border-radius: 8px;
+        height: 100px;
+        width: 800px;
+        background-color: rgb(47, 118, 252);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 20px;
+
+        .left{
+            text-align: left;
+            color:#E5E7EB;
+            .small_header {
+                font-size:24px;
+            }
+        }
+    }
 }
