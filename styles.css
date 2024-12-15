@@ -28,6 +28,31 @@ div {
     text-align: left;
 }
 
+.section_one #left.item #title{
+    text-align: left;
+    font-size: 48px;
+    line-height: 95%;
+    color: #F9FAF8;
+    font-weight: 900;
+    padding: 0px;
+    
+}
+
+#subtitle {
+    font-size: 18px;
+    color: #E5E7EB;
+    padding: 0px;
+}
+
+.section_one #right.item {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(130, 155, 155);
+}
+
+
 
 .section_three {
     background-color: #E5E7EB;
@@ -44,5 +69,26 @@ div {
 #header {
     background-color: #1F2937;
     color: #EEEEEE;
-    height: 50px;
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.logo {
+    font-size: 24px;
+    color: #F9FAF8;
+    justify-content: left;
+    text-align: left;
+}
+
+.link_container {
+    display: flex;
+    align-items: center;
+}
+
+.solo_link {
+    font-size: 18px;
+    color: #E5E7EB;
+    text-align: left;
 }
