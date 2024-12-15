@@ -56,6 +56,24 @@ div {
 
 .section_three {
     background-color: #E5E7EB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section_three div {
+    display: flex;
+    flex-direction: column;
+}
+
+.section_three p {
+    width: 600px;
+    text-align: left;
+}
+.section_three #signage {
+    text-align: right;
+    align-self: flex-end;
+    justify-self: flex-end;
 }
 
 #footer {
