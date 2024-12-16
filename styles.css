@@ -1,15 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
 div {
     text-align: center;
   }
 
+
 body {
     background-color: #1F2937;
+    width: 100%;
     margin: 0;
     padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x:hidden;
 }
 .MainPageContainer {
     border:none;
     width: 100%;
+    margin: 0;
+    padding: 0;
     text-align: center;
     justify-content: center;
     font-family: "Roboto", sans-serif;
@@ -20,7 +32,8 @@ body {
     align-items: center;
 }
 .section_one {
-    width: 60%;
+    flex-wrap:wrap;
+    max-width: 60%;
     height: 350px;
     align-items: center;
     justify-content: center;
@@ -31,6 +44,7 @@ body {
         min-width: 400px;
         height: 200px;
         flex: 1;
+        flex-shrink: 1;
     }
 }
 
@@ -62,7 +76,14 @@ body {
     background-color: rgb(130, 132, 141);
 }
 
+@media (max-width: 500px){
+    .section_one #right.item {
+        display: none;
+    }
+}
+
 .section_three {
+    border: none;
     background-color: #E5E7EB;
     display: flex;
     align-items: center;
@@ -72,6 +93,8 @@ body {
 
 .section_two {
     width: 100%;
+    margin: 0;
+    padding: 0;
     background-color: white;
 }
 
@@ -79,6 +102,7 @@ body {
     padding: 50px;
     display:flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
@@ -93,6 +117,7 @@ body {
     display:flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .info_container {
@@ -120,13 +145,14 @@ body {
 }
 
 .section_three div {
+    flex-wrap: wrap;
     margin: 50px;
     display: flex;
     flex-direction: column;
 }
 
 .section_three p {
-    width: 700px;
+    max-width: 700px;
     text-align: left;
     font-size: 36px;
     font-weight: 300;
@@ -162,16 +188,17 @@ body {
 }
 
 #header {
-    width: 60%;
+    width:100%;
     color: #EEEEEE;
     display: flex;
     height: 80px;
-    justify-content: space-between;
     padding: 0;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
-    padding-top: 30px;
+    padding: 20px;
     font-size: 24px;
     color: #F9FAF8;
     justify-content: left;
@@ -184,8 +211,8 @@ body {
 }
 
 .solo_link {
-    min-width: 80px;
-    padding: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
     font-size: 18px;
     color: #E5E7EB;
     text-align: left;
@@ -200,8 +227,7 @@ body {
 
     .advertisement {
         border-radius: 8px;
-        height: 100px;
-        width: 60%;
+        max-width: 60%;
         background-color:#3882F6;
         display: flex;
         align-items: center;
